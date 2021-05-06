@@ -269,6 +269,16 @@
                                 <exclude reference="hmu-AT-i4N"/>
                                 <exclude reference="oXD-Q8-Hdg"/>
                                 <exclude reference="yoh-cJ-3Rd"/>
+                                <exclude reference="0iX-5z-I8B"/>
+                                <exclude reference="9JL-ge-HQe"/>
+                                <exclude reference="9mM-uI-R2N"/>
+                                <exclude reference="dEn-sD-6TZ"/>
+                                <exclude reference="G1e-mq-0nt"/>
+                                <exclude reference="ufE-oA-dOW"/>
+                                <exclude reference="yGX-pu-4T3"/>
+                                <exclude reference="X7c-Fk-0Rr"/>
+                                <exclude reference="dl4-gQ-JMd"/>
+                                <exclude reference="s89-lr-yLv"/>
                                 <exclude reference="EXN-K7-gN4"/>
                                 <exclude reference="Fcg-8V-iLY"/>
                                 <exclude reference="H8k-92-Xvu"/>
@@ -278,9 +288,6 @@
                                 <exclude reference="4KG-dl-hzf"/>
                                 <exclude reference="PZ2-tr-kfq"/>
                                 <exclude reference="uuJ-Te-bvX"/>
-                                <exclude reference="G1e-mq-0nt"/>
-                                <exclude reference="ufE-oA-dOW"/>
-                                <exclude reference="yGX-pu-4T3"/>
                                 <exclude reference="8yA-3b-hr8"/>
                                 <exclude reference="BzF-tv-zye"/>
                                 <exclude reference="EV5-6C-ebi"/>
@@ -293,13 +300,6 @@
                                 <exclude reference="rMd-X2-efO"/>
                                 <exclude reference="wXv-MP-jRf"/>
                                 <exclude reference="yvM-15-1J7"/>
-                                <exclude reference="X7c-Fk-0Rr"/>
-                                <exclude reference="dl4-gQ-JMd"/>
-                                <exclude reference="s89-lr-yLv"/>
-                                <exclude reference="0iX-5z-I8B"/>
-                                <exclude reference="9JL-ge-HQe"/>
-                                <exclude reference="9mM-uI-R2N"/>
-                                <exclude reference="dEn-sD-6TZ"/>
                                 <exclude reference="uwP-4T-up7"/>
                                 <exclude reference="yol-ar-08H"/>
                             </mask>
@@ -311,6 +311,19 @@
                                 <include reference="R62-lI-9gw"/>
                                 <exclude reference="gFy-df-Kli"/>
                                 <include reference="oXD-Q8-Hdg"/>
+                                <exclude reference="0iX-5z-I8B"/>
+                                <exclude reference="8dw-vb-wEs"/>
+                                <include reference="9JL-ge-HQe"/>
+                                <include reference="9mM-uI-R2N"/>
+                                <exclude reference="dEn-sD-6TZ"/>
+                                <exclude reference="tff-ku-Khh"/>
+                                <exclude reference="Pkf-Hk-Fhf"/>
+                                <exclude reference="asc-dy-tcg"/>
+                                <exclude reference="sJd-1H-UHG"/>
+                                <include reference="yGX-pu-4T3"/>
+                                <include reference="X7c-Fk-0Rr"/>
+                                <include reference="dl4-gQ-JMd"/>
+                                <exclude reference="pey-Zn-mKn"/>
                                 <include reference="Fcg-8V-iLY"/>
                                 <include reference="H8k-92-Xvu"/>
                                 <exclude reference="J9m-y3-P4v"/>
@@ -319,10 +332,6 @@
                                 <include reference="h75-lp-vaz"/>
                                 <exclude reference="mwt-wv-JQb"/>
                                 <exclude reference="uuJ-Te-bvX"/>
-                                <exclude reference="Pkf-Hk-Fhf"/>
-                                <exclude reference="asc-dy-tcg"/>
-                                <exclude reference="sJd-1H-UHG"/>
-                                <include reference="yGX-pu-4T3"/>
                                 <exclude reference="1TO-ND-71s"/>
                                 <exclude reference="1iy-Wl-DL9"/>
                                 <include reference="EV5-6C-ebi"/>
@@ -332,15 +341,6 @@
                                 <include reference="q2c-79-VPn"/>
                                 <exclude reference="sjB-rA-qmj"/>
                                 <include reference="wXv-MP-jRf"/>
-                                <include reference="X7c-Fk-0Rr"/>
-                                <include reference="dl4-gQ-JMd"/>
-                                <exclude reference="pey-Zn-mKn"/>
-                                <exclude reference="0iX-5z-I8B"/>
-                                <exclude reference="8dw-vb-wEs"/>
-                                <include reference="9JL-ge-HQe"/>
-                                <include reference="9mM-uI-R2N"/>
-                                <exclude reference="dEn-sD-6TZ"/>
-                                <exclude reference="tff-ku-Khh"/>
                                 <exclude reference="aox-0Q-lj9"/>
                                 <exclude reference="jfc-9I-jyj"/>
                                 <include reference="yol-ar-08H"/>
@@ -353,6 +353,13 @@
                                 <exclude reference="gFy-df-Kli"/>
                                 <include reference="hmu-AT-i4N"/>
                                 <include reference="yoh-cJ-3Rd"/>
+                                <include reference="G1e-mq-0nt"/>
+                                <exclude reference="Pkf-Hk-Fhf"/>
+                                <exclude reference="asc-dy-tcg"/>
+                                <exclude reference="sJd-1H-UHG"/>
+                                <include reference="ufE-oA-dOW"/>
+                                <exclude reference="pey-Zn-mKn"/>
+                                <exclude reference="s89-lr-yLv"/>
                                 <include reference="EXN-K7-gN4"/>
                                 <exclude reference="J9m-y3-P4v"/>
                                 <exclude reference="LWQ-8p-HYX"/>
@@ -362,11 +369,6 @@
                                 <include reference="4KG-dl-hzf"/>
                                 <exclude reference="PZ2-tr-kfq"/>
                                 <exclude reference="mwt-wv-JQb"/>
-                                <include reference="G1e-mq-0nt"/>
-                                <exclude reference="Pkf-Hk-Fhf"/>
-                                <exclude reference="asc-dy-tcg"/>
-                                <exclude reference="sJd-1H-UHG"/>
-                                <include reference="ufE-oA-dOW"/>
                                 <exclude reference="1TO-ND-71s"/>
                                 <exclude reference="1iy-Wl-DL9"/>
                                 <exclude reference="8yA-3b-hr8"/>
@@ -378,8 +380,6 @@
                                 <include reference="rMd-X2-efO"/>
                                 <exclude reference="sjB-rA-qmj"/>
                                 <include reference="yvM-15-1J7"/>
-                                <exclude reference="pey-Zn-mKn"/>
-                                <exclude reference="s89-lr-yLv"/>
                                 <exclude reference="aox-0Q-lj9"/>
                                 <exclude reference="jfc-9I-jyj"/>
                                 <include reference="uwP-4T-up7"/>
@@ -387,6 +387,8 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="button2" destination="YnW-RX-ExU" id="Re1-By-J1B"/>
+                        <outlet property="button4" destination="1dg-lc-GtW" id="VWd-ud-saF"/>
                         <outlet property="buttonFourSquare" destination="45l-6v-QFD" id="dm3-17-1KJ"/>
                         <outlet property="buttonWideBottom" destination="rd4-h2-IfQ" id="iDQ-Kl-t37"/>
                         <outlet property="buttonWideTop" destination="E9C-u8-Vfq" id="RIi-70-jjF"/>
