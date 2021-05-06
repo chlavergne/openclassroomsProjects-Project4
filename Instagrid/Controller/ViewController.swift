@@ -8,26 +8,27 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-
+    
     @IBOutlet weak var buttonWideTop: UIButton!
     @IBOutlet weak var buttonWideBottom: UIButton!
     @IBOutlet weak var buttonFourSquare: UIButton!
+    @IBOutlet weak var frameView: FrameView!
+    
     
     @IBAction func tapButtonWideTop(_ sender: UIButton) {
-        StyleSelect.style = .wideTop
+        FrameView().style = .wideTop
         buttonWideTop.setImage(#imageLiteral(resourceName: "Selected"), for: .normal)
         buttonWideBottom.setImage(nil, for: .normal)
         buttonFourSquare.setImage(nil, for: .normal)
     }
     @IBAction func tapButtonWideBottom(_ sender: UIButton) {
-        StyleSelect.style = .wideBottom
+        FrameView().style = .wideBottom
         buttonWideTop.setImage(nil, for: .normal)
         buttonWideBottom.setImage(#imageLiteral(resourceName: "Selected"), for: .normal)
         buttonFourSquare.setImage(nil, for: .normal)
     }
     @IBAction func tapButtonFourSquare(_ sender: UIButton) {
-        StyleSelect.style = .fourSquare
+        FrameView().style = .fourSquare
         buttonWideTop.setImage(nil, for: .normal)
         buttonWideBottom.setImage(nil, for: .normal)
         buttonFourSquare.setImage(#imageLiteral(resourceName: "Selected"), for: .normal)
@@ -38,7 +39,5 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
 }
 

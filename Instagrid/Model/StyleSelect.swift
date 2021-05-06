@@ -11,16 +11,16 @@ class StyleSelect : UIView {
     enum Style {
         case wideTop, wideBottom, fourSquare
     }
-    static var style : Style = .wideTop
+    var style : Style = .wideTop
 
     private func setStyle(_ style: Style) {
         switch style {
         case .wideTop:
-            
+            break
         case .wideBottom:
-            
+            break
         case .fourSquare:
-            
+            break
         }
     }
 }
