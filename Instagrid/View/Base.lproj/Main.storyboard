@@ -32,7 +32,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="E9C-u8-Vfq" secondAttribute="height" multiplier="1:1" id="e5x-XF-JvD"/>
                                         </constraints>
-                                        <state key="normal" image="Selected" backgroundImage="Layout 1"/>
+                                        <state key="normal" backgroundImage="Layout 1"/>
                                         <connections>
                                             <action selector="tapButtonWideTop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Mf-68-7D8"/>
                                         </connections>
@@ -52,7 +52,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="45l-6v-QFD" secondAttribute="height" multiplier="1:1" id="XXV-Yq-ujc"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="Layout 3"/>
+                                        <state key="normal" image="Selected" backgroundImage="Layout 3"/>
                                         <connections>
                                             <action selector="tapButtonFourSquare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bwc-Nu-VAm"/>
                                         </connections>
@@ -387,8 +387,6 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="button2" destination="YnW-RX-ExU" id="Re1-By-J1B"/>
-                        <outlet property="button4" destination="1dg-lc-GtW" id="VWd-ud-saF"/>
                         <outlet property="buttonFourSquare" destination="45l-6v-QFD" id="dm3-17-1KJ"/>
                         <outlet property="buttonWideBottom" destination="rd4-h2-IfQ" id="iDQ-Kl-t37"/>
                         <outlet property="buttonWideTop" destination="E9C-u8-Vfq" id="RIi-70-jjF"/>
