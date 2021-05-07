@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonWideBottom: UIButton!
     @IBOutlet weak var buttonFourSquare: UIButton!
     @IBOutlet weak var frameView: FrameView!
-   
+//   test
     @IBAction func tapButtonWideTop(_ sender: UIButton) {
         frameView.style = .wideTop
         buttonWideTop.setImage(#imageLiteral(resourceName: "Selected"), for: .normal)
