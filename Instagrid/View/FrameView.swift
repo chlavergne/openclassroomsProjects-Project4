@@ -36,7 +36,4 @@ class FrameView: UIStackView {
     @IBOutlet private var button3 : UIButton!
     @IBOutlet private var button4 : UIButton!
    
-    
-    
-    
 }
