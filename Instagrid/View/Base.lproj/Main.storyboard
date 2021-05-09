@@ -66,10 +66,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SBA-1V-nt1">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="172"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhl-oK-58N" userLabel="button1">
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhl-oK-58N" userLabel="button1">
                                                 <rect key="frame" x="10" y="10" width="162" height="162"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="Plus"/>
+                                                <connections>
+                                                    <action selector="chooseImage1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L77-kj-Pey"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YnW-RX-ExU" userLabel="button2">
                                                 <rect key="frame" x="182" y="10" width="162" height="162"/>
@@ -387,6 +390,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="button1" destination="vhl-oK-58N" id="fb1-n3-vvd"/>
                         <outlet property="buttonFourSquare" destination="45l-6v-QFD" id="dm3-17-1KJ"/>
                         <outlet property="buttonWideBottom" destination="rd4-h2-IfQ" id="iDQ-Kl-t37"/>
                         <outlet property="buttonWideTop" destination="E9C-u8-Vfq" id="RIi-70-jjF"/>
