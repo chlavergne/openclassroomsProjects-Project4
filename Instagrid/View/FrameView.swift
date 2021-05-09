@@ -8,6 +8,12 @@
 import UIKit
 
 class FrameView: UIStackView {
+    
+    @IBOutlet private var button1 : UIButton!
+    @IBOutlet private var button2 : UIButton!
+    @IBOutlet private var button3 : UIButton!
+    @IBOutlet private var button4 : UIButton!
+    
     enum Style {
         case wideTop, wideBottom, fourSquare
     }
@@ -31,9 +37,4 @@ class FrameView: UIStackView {
             button4.isHidden = false
         }
     }
-    @IBOutlet private var button1 : UIButton!
-    @IBOutlet private var button2 : UIButton!
-    @IBOutlet private var button3 : UIButton!
-    @IBOutlet private var button4 : UIButton!
-   
 }
