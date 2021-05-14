@@ -7,7 +7,8 @@
 
 import UIKit
 
-class ViewController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    
     var button : UIButton!
     
     @IBOutlet weak var buttonWideTop: UIButton!
@@ -41,29 +42,63 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate, UINaviga
         openGallery()
     }
     
-    @objc func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
-        button.setBackgroundImage(image, for: .normal)
-        button.layoutIfNeeded()
-        button.subviews.first?.contentMode = .scaleAspectFill
-        button.setImage(nil, for: .normal)
-        picker.dismiss(animated: true, completion: nil)
-    }
-    
-    @objc func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        picker.dismiss(animated: true, completion: nil)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(dragFrameView(_:)))
+        frameView.addGestureRecognizer(panGestureRecognizer)
     }
     
+    @objc func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
+        button.setImage(image, for: .normal)
+//        button.layoutIfNeeded() // Update subview layout to apply the scaleAspectFill
+        button.subviews.first?.contentMode = .scaleAspectFill
+//        button.setImage(nil, for: .normal) // Remove the cross image
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    @objc func dragFrameView(_ sender: UIPanGestureRecognizer){
+        switch sender.state {
+        case .began, .changed:
+            transformFrameViewWith(gesture: sender)
+        case .cancelled:
+            frameView.transform = .identity
+        case .ended:
+            animView()
+            share()
+            
+            print("")
+        default:
+            break
+        }
+    }
+    
+    private func transformFrameViewWith(gesture: UIPanGestureRecognizer){
+        
+        let translation = gesture.translation(in: frameView)
+        frameView.transform = CGAffineTransform(translationX: translation.x, y: translation.y)
+        
+    }
+    
+    private func share() {
+        let shareScreen = UIActivityViewController(activityItems: [], applicationActivities: [])
+        present(shareScreen, animated: true)
+    }
     private func openGallery() {
         let imagePickerController = UIImagePickerController()
         imagePickerController.delegate = self
         imagePickerController.sourceType = .photoLibrary
         self.present(imagePickerController, animated: true, completion: nil)
+        
     }
+    private func animView() {
+        let screenHeight = UIScreen.main.bounds.height //anim
+        var translationTransform: CGAffineTransform // anim
+        translationTransform = CGAffineTransform(translationX: 0, y: -screenHeight) // anim
+//        if translation.y < -screenHeight / 3 {  //Swipe need to reach 1/3 of the screen to be valid // anim
+//            UIView.animate(withDuration: 0.6, animations: {self.frameView.transform = translationTransform}) // anim
+//        }
+    }
+    
 }
 
