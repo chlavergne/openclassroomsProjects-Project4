@@ -24,6 +24,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Arrow Up" translatesAutoresizingMaskIntoConstraints="NO" id="nvA-iJ-aIh">
+                                <rect key="frame" x="135" y="207" width="144" height="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nvA-iJ-aIh" secondAttribute="height" multiplier="18:1" id="QLd-Fa-hph"/>
+                                    <constraint firstAttribute="width" secondItem="nvA-iJ-aIh" secondAttribute="height" multiplier="18:1" id="fPT-x2-OI7"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="fPT-x2-OI7"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" hidden="YES">
+                                    <mask key="constraints">
+                                        <exclude reference="QLd-Fa-hph"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" hidden="YES">
+                                    <mask key="constraints">
+                                        <exclude reference="QLd-Fa-hph"/>
+                                        <exclude reference="fPT-x2-OI7"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up to share" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mam-Jb-6ih">
+                                <rect key="frame" x="121" y="230" width="172.5" height="31"/>
+                                <fontDescription key="fontDescription" name="Delm-Medium" family="Delm" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=compact" hidden="YES"/>
+                                <variation key="heightClass=compact-widthClass=regular" hidden="YES"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Arrow Left" translatesAutoresizingMaskIntoConstraints="NO" id="c9Q-Qo-TEF">
+                                <rect key="frame" x="90" y="204.5" width="234" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="c9Q-Qo-TEF" secondAttribute="height" multiplier="18:1" id="de1-mo-p55"/>
+                                </constraints>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="de1-mo-p55"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <exclude reference="de1-mo-p55"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe left to share" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hzd-p3-1qb">
+                                <rect key="frame" x="115" y="230" width="184" height="31"/>
+                                <fontDescription key="fontDescription" name="Delm-Medium" family="Delm" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagrid" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OiX-rT-NIP">
+                                <rect key="frame" x="144" y="64" width="126.5" height="41.5"/>
+                                <fontDescription key="fontDescription" name="ThirstySoftRegular" family="Thirsty Soft" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="XFR-ch-Cc2">
                                 <rect key="frame" x="40" y="760.5" width="334" height="91.5"/>
                                 <subviews>
@@ -130,67 +191,6 @@
                                     <outlet property="button4" destination="1dg-lc-GtW" id="8LG-ez-uYu"/>
                                 </connections>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagrid" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OiX-rT-NIP">
-                                <rect key="frame" x="144" y="64" width="126.5" height="41.5"/>
-                                <fontDescription key="fontDescription" name="ThirstySoftRegular" family="Thirsty Soft" pointSize="32"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Arrow Left" translatesAutoresizingMaskIntoConstraints="NO" id="c9Q-Qo-TEF">
-                                <rect key="frame" x="90" y="204.5" width="234" height="13"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="c9Q-Qo-TEF" secondAttribute="height" multiplier="18:1" id="de1-mo-p55"/>
-                                </constraints>
-                                <variation key="heightClass=compact-widthClass=compact">
-                                    <mask key="constraints">
-                                        <exclude reference="de1-mo-p55"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=regular">
-                                    <mask key="constraints">
-                                        <exclude reference="de1-mo-p55"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Arrow Up" translatesAutoresizingMaskIntoConstraints="NO" id="nvA-iJ-aIh">
-                                <rect key="frame" x="135" y="207" width="144" height="8"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="nvA-iJ-aIh" secondAttribute="height" multiplier="18:1" id="QLd-Fa-hph"/>
-                                    <constraint firstAttribute="width" secondItem="nvA-iJ-aIh" secondAttribute="height" multiplier="18:1" id="fPT-x2-OI7"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="fPT-x2-OI7"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=compact" hidden="YES">
-                                    <mask key="constraints">
-                                        <exclude reference="QLd-Fa-hph"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=regular" hidden="YES">
-                                    <mask key="constraints">
-                                        <exclude reference="QLd-Fa-hph"/>
-                                        <exclude reference="fPT-x2-OI7"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe left to share" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hzd-p3-1qb">
-                                <rect key="frame" x="115" y="230" width="184" height="31"/>
-                                <fontDescription key="fontDescription" name="Delm-Medium" family="Delm" pointSize="28"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up to share" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mam-Jb-6ih">
-                                <rect key="frame" x="121" y="230" width="172.5" height="31"/>
-                                <fontDescription key="fontDescription" name="Delm-Medium" family="Delm" pointSize="28"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=compact-widthClass=compact" hidden="YES"/>
-                                <variation key="heightClass=compact-widthClass=regular" hidden="YES"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2Gv-Fh-UT8"/>
                         <color key="backgroundColor" red="0.73828363419999998" green="0.86314755679999999" blue="0.91421931980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
