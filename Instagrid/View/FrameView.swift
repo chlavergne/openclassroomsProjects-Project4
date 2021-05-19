@@ -14,6 +14,7 @@ class FrameView: UIStackView {
     @IBOutlet private var button3: UIButton!
     @IBOutlet private var button4: UIButton!
 
+//  3 differents display modes
     enum Style {
         case wideTop, wideBottom, fourSquare
     }

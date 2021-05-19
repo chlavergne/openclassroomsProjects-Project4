@@ -11,14 +11,12 @@ class ViewController: UIViewController {
 
     //  4 buttons in FrameView
     private var button: UIButton!
-
     private var swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(afterSwipeGesture(recognizer:)))
 
     //  3 buttons for the display mode
     @IBOutlet weak var buttonWideTop: UIButton!
     @IBOutlet weak var buttonWideBottom: UIButton!
     @IBOutlet weak var buttonFourSquare: UIButton!
-
     @IBOutlet weak var frameView: FrameView!
 
     //  selection of the 3 possible display mode
