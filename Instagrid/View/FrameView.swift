@@ -8,22 +8,22 @@
 import UIKit
 
 class FrameView: UIStackView {
-    
-    @IBOutlet private var button1 : UIButton!
-    @IBOutlet private var button2 : UIButton!
-    @IBOutlet private var button3 : UIButton!
-    @IBOutlet private var button4 : UIButton!
-    
+
+    @IBOutlet private var button1: UIButton!
+    @IBOutlet private var button2: UIButton!
+    @IBOutlet private var button3: UIButton!
+    @IBOutlet private var button4: UIButton!
+
     enum Style {
         case wideTop, wideBottom, fourSquare
     }
-    
+
     var style: Style = .wideTop {
         didSet {
             setStyle(style)
         }
     }
-    
+
     private func setStyle(_ style: Style) {
         switch style {
         case .wideTop:
