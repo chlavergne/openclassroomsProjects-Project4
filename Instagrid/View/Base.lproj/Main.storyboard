@@ -122,9 +122,6 @@
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhl-oK-58N" userLabel="button1">
                                                 <rect key="frame" x="10" y="10" width="162" height="162"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="vhl-oK-58N" secondAttribute="height" multiplier="1:1" id="2NS-rU-ZG9"/>
-                                                </constraints>
                                                 <state key="normal" image="Plus"/>
                                                 <connections>
                                                     <action selector="chooseImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L77-kj-Pey"/>
@@ -155,9 +152,6 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4T-Dz-cTp" userLabel="button3">
                                                 <rect key="frame" x="10" y="0.0" width="162" height="162"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="x4T-Dz-cTp" secondAttribute="height" multiplier="1:1" id="aUm-4T-oDf"/>
-                                                </constraints>
                                                 <state key="normal" image="Plus"/>
                                                 <connections>
                                                     <action selector="chooseImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c3C-ml-Xfv"/>
