@@ -22,25 +22,26 @@ class ViewController: UIViewController {
     //  selection of the 3 possible display mode
     @IBAction func tapButtonWideTop(_ sender: UIButton) {
         frameView.style = .wideTop
-        buttonWideTop.setImage(#imageLiteral(resourceName: "Selected"), for: .normal)
-        buttonWideBottom.setImage(nil, for: .normal)
-        buttonFourSquare.setImage(nil, for: .normal)
+        resetSelectButton(sender)
     }
 
     @IBAction func tapButtonWideBottom(_ sender: UIButton) {
         frameView.style = .wideBottom
-        buttonWideTop.setImage(nil, for: .normal)
-        buttonWideBottom.setImage(#imageLiteral(resourceName: "Selected"), for: .normal)
-        buttonFourSquare.setImage(nil, for: .normal)
+        resetSelectButton(sender)
     }
 
     @IBAction func tapButtonFourSquare(_ sender: UIButton) {
         frameView.style = .fourSquare
-        buttonWideTop.setImage(nil, for: .normal)
-        buttonWideBottom.setImage(nil, for: .normal)
-        buttonFourSquare.setImage(#imageLiteral(resourceName: "Selected"), for: .normal)
+        resetSelectButton(sender)
     }
 
+    private func resetSelectButton(_ sender: UIButton) {
+        buttonWideTop.isSelected = false
+        buttonWideBottom.isSelected = false
+        buttonFourSquare.isSelected = false
+
+        sender.isSelected = true
+    }
     // action to pick an image in the gallery with the selected button
     @IBAction func chooseImage(_ sender: UIButton) {
         button = sender
@@ -84,7 +85,7 @@ class ViewController: UIViewController {
         } else {
             translationTransform = CGAffineTransform(translationX: 0, y: -screenHeight)
         }
-        UIView.animate(withDuration: 0.4) {self.frameView.transform = translationTransform}
+        UIView.animate(withDuration: 0.4) { self.frameView.transform = translationTransform }
     }
 
     private func share() {
@@ -95,7 +96,7 @@ class ViewController: UIViewController {
         let activityController = UIActivityViewController(activityItems: [screenshot], applicationActivities: nil)
         present(activityController, animated: true)
         activityController.completionWithItemsHandler = { (_, _, _, _) in
-            UIView.animate(withDuration: 0.2) {self.frameView.transform = .identity}
+            UIView.animate(withDuration: 0.2) { self.frameView.transform = .identity }
         }
     }
 }

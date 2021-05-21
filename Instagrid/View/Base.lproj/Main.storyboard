@@ -83,6 +83,7 @@
                                             <constraint firstAttribute="width" secondItem="E9C-u8-Vfq" secondAttribute="height" multiplier="1:1" id="e5x-XF-JvD"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="Layout 1"/>
+                                        <state key="selected" image="Selected"/>
                                         <connections>
                                             <action selector="tapButtonWideTop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Mf-68-7D8"/>
                                         </connections>
@@ -93,16 +94,18 @@
                                             <constraint firstAttribute="width" secondItem="rd4-h2-IfQ" secondAttribute="height" multiplier="1:1" id="iaz-hB-I4n"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="Layout 2"/>
+                                        <state key="selected" image="Selected"/>
                                         <connections>
                                             <action selector="tapButtonWideBottom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rwn-Jx-h1L"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45l-6v-QFD" userLabel="ButtonRight">
+                                    <button opaque="NO" contentMode="scaleAspectFit" selected="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45l-6v-QFD" userLabel="ButtonRight">
                                         <rect key="frame" x="242.5" y="0.0" width="91.5" height="91.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="45l-6v-QFD" secondAttribute="height" multiplier="1:1" id="XXV-Yq-ujc"/>
                                         </constraints>
-                                        <state key="normal" image="Selected" backgroundImage="Layout 3"/>
+                                        <state key="normal" backgroundImage="Layout 3"/>
+                                        <state key="selected" image="Selected"/>
                                         <connections>
                                             <action selector="tapButtonFourSquare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bwc-Nu-VAm"/>
                                         </connections>
