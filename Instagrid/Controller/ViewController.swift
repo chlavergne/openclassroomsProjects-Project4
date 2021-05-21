@@ -84,7 +84,7 @@ class ViewController: UIViewController {
         } else {
             translationTransform = CGAffineTransform(translationX: 0, y: -screenHeight)
         }
-        UIView.animate(withDuration: 0.4, animations: {self.frameView.transform = translationTransform})
+        UIView.animate(withDuration: 0.4) {self.frameView.transform = translationTransform}
     }
 
     private func share() {
@@ -95,9 +95,7 @@ class ViewController: UIViewController {
         let activityController = UIActivityViewController(activityItems: [screenshot], applicationActivities: nil)
         present(activityController, animated: true)
         activityController.completionWithItemsHandler = { (_, _, _, _) in
-            UIView.animate(withDuration: 0.2, animations: {
-                self.frameView.transform = .identity
-            })
+            UIView.animate(withDuration: 0.2) {self.frameView.transform = .identity}
         }
     }
 }
