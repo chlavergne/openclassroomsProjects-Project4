@@ -113,7 +113,7 @@
                                 </subviews>
                                 <variation key="heightClass=regular-widthClass=compact" axis="horizontal"/>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TQc-XZ-fyM" customClass="FrameView" customModule="Instagrid" customModuleProvider="target">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TQc-XZ-fyM" customClass="FrameView" customModule="Instagrid" customModuleProvider="target">
                                 <rect key="frame" x="30" y="271" width="354" height="354"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SBA-1V-nt1">
@@ -122,6 +122,10 @@
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhl-oK-58N" userLabel="button1">
                                                 <rect key="frame" x="10" y="10" width="162" height="162"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="button1"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="vhl-oK-58N" secondAttribute="height" multiplier="1:1" priority="999" id="0Ug-6C-IUK"/>
+                                                </constraints>
                                                 <state key="normal" image="Plus"/>
                                                 <connections>
                                                     <action selector="chooseImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L77-kj-Pey"/>
@@ -130,6 +134,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YnW-RX-ExU" userLabel="button2">
                                                 <rect key="frame" x="182" y="10" width="162" height="162"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="button2"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="YnW-RX-ExU" secondAttribute="height" multiplier="1:1" id="CRV-Ec-lYH"/>
                                                 </constraints>
@@ -140,9 +145,8 @@
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="vhl-oK-58N" firstAttribute="top" secondItem="SBA-1V-nt1" secondAttribute="top" constant="10" id="3Fr-pO-G9e"/>
-                                            <constraint firstItem="vhl-oK-58N" firstAttribute="leading" secondItem="SBA-1V-nt1" secondAttribute="leading" constant="10" id="KGY-SH-0Xi"/>
-                                            <constraint firstItem="YnW-RX-ExU" firstAttribute="top" secondItem="SBA-1V-nt1" secondAttribute="top" constant="10" id="xr4-NG-HWa"/>
+                                            <constraint firstItem="vhl-oK-58N" firstAttribute="leading" secondItem="SBA-1V-nt1" secondAttribute="leading" constant="10" id="jYq-jS-KJj"/>
+                                            <constraint firstItem="vhl-oK-58N" firstAttribute="top" secondItem="SBA-1V-nt1" secondAttribute="top" constant="10" id="wWF-si-mCc"/>
                                         </constraints>
                                         <directionalEdgeInsets key="directionalLayoutMargins" top="10" leading="10" bottom="0.0" trailing="10"/>
                                     </stackView>
@@ -152,6 +156,10 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4T-Dz-cTp" userLabel="button3">
                                                 <rect key="frame" x="10" y="0.0" width="162" height="162"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="button3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="x4T-Dz-cTp" secondAttribute="height" multiplier="1:1" priority="999" id="gDx-89-QYL"/>
+                                                </constraints>
                                                 <state key="normal" image="Plus"/>
                                                 <connections>
                                                     <action selector="chooseImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c3C-ml-Xfv"/>
@@ -160,6 +168,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dg-lc-GtW" userLabel="button4">
                                                 <rect key="frame" x="182" y="0.0" width="162" height="162"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="button4"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="1dg-lc-GtW" secondAttribute="height" multiplier="1:1" id="H2c-oA-0RE"/>
                                                 </constraints>
@@ -170,10 +179,7 @@
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="x4T-Dz-cTp" firstAttribute="leading" secondItem="xdE-cM-04F" secondAttribute="leading" constant="10" id="GJw-w9-0NU"/>
-                                            <constraint firstAttribute="trailing" secondItem="1dg-lc-GtW" secondAttribute="trailing" constant="10" id="OHn-63-KAJ"/>
-                                            <constraint firstAttribute="bottom" secondItem="x4T-Dz-cTp" secondAttribute="bottom" constant="10" id="Vut-7b-Ew7"/>
-                                            <constraint firstAttribute="bottom" secondItem="1dg-lc-GtW" secondAttribute="bottom" constant="10" id="t0C-LN-eJS"/>
+                                            <constraint firstItem="x4T-Dz-cTp" firstAttribute="leading" secondItem="xdE-cM-04F" secondAttribute="leading" constant="10" id="9o7-2G-WBp"/>
                                         </constraints>
                                         <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="10" bottom="10" trailing="10"/>
                                     </stackView>
@@ -181,15 +187,9 @@
                                 <color key="backgroundColor" red="0.0" green="0.4445706606" blue="0.64432048799999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="xdE-cM-04F" firstAttribute="centerX" secondItem="TQc-XZ-fyM" secondAttribute="centerX" id="2EN-IZ-3oz"/>
-                                    <constraint firstAttribute="trailing" secondItem="xdE-cM-04F" secondAttribute="trailing" id="372-0D-RU7"/>
                                     <constraint firstAttribute="trailing" secondItem="xdE-cM-04F" secondAttribute="trailing" id="4Ch-AR-G7g"/>
-                                    <constraint firstItem="SBA-1V-nt1" firstAttribute="top" secondItem="TQc-XZ-fyM" secondAttribute="top" id="6kS-Rn-FJZ"/>
-                                    <constraint firstAttribute="bottom" secondItem="xdE-cM-04F" secondAttribute="bottom" id="6su-0m-6Zv"/>
-                                    <constraint firstAttribute="trailing" secondItem="SBA-1V-nt1" secondAttribute="trailing" id="CvT-6q-qiH"/>
                                     <constraint firstItem="SBA-1V-nt1" firstAttribute="top" secondItem="TQc-XZ-fyM" secondAttribute="top" id="E81-hE-EWs"/>
-                                    <constraint firstItem="SBA-1V-nt1" firstAttribute="leading" secondItem="TQc-XZ-fyM" secondAttribute="leading" id="Gdq-4B-P3u"/>
                                     <constraint firstAttribute="width" secondItem="TQc-XZ-fyM" secondAttribute="height" multiplier="1:1" id="Kmb-t3-yrd"/>
-                                    <constraint firstItem="xdE-cM-04F" firstAttribute="leading" secondItem="TQc-XZ-fyM" secondAttribute="leading" id="Nbu-LE-EAY"/>
                                     <constraint firstAttribute="bottom" secondItem="xdE-cM-04F" secondAttribute="bottom" id="U1t-XC-AaV"/>
                                     <constraint firstItem="xdE-cM-04F" firstAttribute="leading" secondItem="TQc-XZ-fyM" secondAttribute="leading" id="bOy-DY-cdg"/>
                                     <constraint firstItem="SBA-1V-nt1" firstAttribute="leading" secondItem="TQc-XZ-fyM" secondAttribute="leading" id="kRm-q3-NcV"/>
