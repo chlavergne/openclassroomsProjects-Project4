@@ -35,13 +35,6 @@ class ViewController: UIViewController {
         resetSelectButton(sender)
     }
 
-    private func resetSelectButton(_ sender: UIButton) {
-        buttonWideTop.isSelected = false
-        buttonWideBottom.isSelected = false
-        buttonFourSquare.isSelected = false
-
-        sender.isSelected = true
-    }
     // action to pick an image in the gallery with the selected button
     @IBAction func chooseImage(_ sender: UIButton) {
         button = sender
@@ -73,6 +66,14 @@ class ViewController: UIViewController {
     @objc func afterSwipeGesture(recognizer: UISwipeGestureRecognizer) {
         animView()
         share()
+    }
+
+    private func resetSelectButton(_ sender: UIButton) {
+        buttonWideTop.isSelected = false
+        buttonWideBottom.isSelected = false
+        buttonFourSquare.isSelected = false
+
+        sender.isSelected = true
     }
 
     //  animates FrameView after swipe based on screen orientation
